@@ -1,0 +1,83 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "collapsing/pages",
+  "version": "3.0.0",
+  "title": "Collapsing Pages",
+  "category": "text",
+  "icon": "flag",
+  "description": "A Gutenberg block to show a collapsible list of your posts organized by date",
+  "attributes": {
+    "widgetTitle": {
+      "type": "string",
+      "default": "Pages"
+    },
+    "linkToPage": {
+      "type": "boolean",
+      "default": true
+    },
+    "showTopLevel": {
+      "type": "boolean",
+      "default": true
+    },
+    "currentPageOnly": {
+      "type": "boolean",
+      "default": false
+    },
+    "sort": {
+      "type": "string",
+      "default": "pageName"
+    },
+    "sortOrder": {
+      "type": "string",
+      "default": "ASC"
+    },
+    "depth": {
+      "type": "string",
+      "default": "3"
+    },
+    "expand": {
+      "type": "string",
+      "default": "0"
+    },
+    "inExcludePage": {
+      "type": "string",
+      "default": "0"
+    },
+    "inExcludePages": {
+      "type": "string",
+      "default": ""
+    },
+    "defaultExpand": {
+      "type": "string",
+      "default": ""
+    },
+    "customExpand": {
+      "type": "string",
+      "default": ""
+    },
+    "postTitleLength": {
+      "type": "string",
+      "default": 0
+    },
+    "useCookies": {
+      "type": "boolean",
+      "default": true
+    },
+    "style": {
+      "type": "string",
+      "default": "theme"
+    },
+    "debug": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "collapsing-pages",
+  "editorScript": "file:index.js",
+  "editorStyle": "file:index.css",
+  "style": "file:style-index.css"
+}
